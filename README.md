@@ -36,7 +36,7 @@ These run as a closed loop, **Synthesize → Screen → Train → Measure → Ad
 | `raw_logs/accuracy_summary.csv` | Accuracy after every generation, all 17 runs (16 ACP + 1 naive) |
 | `figures/` | All data figures in the paper (PDF + PNG) |
 | `paper/paper.pdf` | Anonymized submission |
-| `docs/` | Project website (static, no build step) |
+| `docs/` | Project website: one static page that works with JavaScript disabled. `docs/build_interactive.py` regenerates its results explorer and consensus calculator from `raw_logs/` |
 
 ## Reproduce every number and figure from the logs
 
