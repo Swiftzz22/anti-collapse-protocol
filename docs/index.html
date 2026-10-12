@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anti-Collapse Protocol</title>
+<meta name="description" content="Learning From Itself Without Losing Itself: A Label-Free Defense Against Model Collapse in LLMs. Anonymous submission.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --ink:#1b2a3a; --muted:#5b6770; --line:#e3e1db;
+  --accent:#0b3c68; --accent-soft:#e7f0fa; --good:#009e73; --bad:#b2182b;
+  --c-con:#d98200; --c-t1:#0b3c68; --c-t2:#6a3d9a; --c-t3:#009e73; --c-t4:#8c5a2b;
+  --code-bg:#f2f0ea;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11161c; --surface:#18202a; --ink:#e6e9ec; --muted:#9aa6b0; --line:#2a3440;
+    --accent:#7fb4e6; --accent-soft:#1c2a3a; --good:#4cc9a4; --bad:#ef6b7a;
+    --c-con:#f0a83a; --c-t1:#7fb4e6; --c-t2:#b58fd9; --c-t3:#4cc9a4; --c-t4:#cf9a66;
+    --code-bg:#1f2833;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11161c; --surface:#18202a; --ink:#e6e9ec; --muted:#9aa6b0; --line:#2a3440;
+  --accent:#7fb4e6; --accent-soft:#1c2a3a; --good:#4cc9a4; --bad:#ef6b7a;
+  --c-con:#f0a83a; --c-t1:#7fb4e6; --c-t2:#b58fd9; --c-t3:#4cc9a4; --c-t4:#cf9a66;
+  --code-bg:#1f2833;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Source Serif 4",Georgia,serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+.wide{max-width:1120px}
+a{color:var(--accent)}
+h1,h2,h3,.sans{font-family:Inter,system-ui,sans-serif}
+h2{font-size:1.45rem;margin:3.2rem 0 1rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.6rem 0 .4rem}
+p{margin:.7rem 0}
+img{max-width:100%;height:auto;display:block}
+
+header{padding:4.5rem 0 2.2rem;text-align:center;border-bottom:1px solid var(--line)}
+.venue{font:500 .78rem Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(1.7rem,4.2vw,2.6rem);line-height:1.18;margin:.8rem auto .4rem;max-width:820px;letter-spacing:-.02em}
+h1 .sub{display:block;font-weight:500;font-size:.62em;color:var(--muted);margin-top:.5rem;letter-spacing:0}
+.authors{font:500 1rem Inter,sans-serif;color:var(--muted);margin:1.1rem 0 1.6rem}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.55rem 1.05rem;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font:500 .92rem Inter,sans-serif;border:1px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{opacity:.85}
+.btn svg{width:16px;height:16px}
+.theme{position:absolute;top:14px;right:16px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:.3rem .7rem;font:500 .8rem Inter,sans-serif;cursor:pointer}
+
+.tldr{margin:2.2rem auto 0;padding:1.1rem 1.3rem;background:var(--accent-soft);border-radius:10px;font-size:1.04rem}
+.tldr b{font-family:Inter,sans-serif;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-right:.4rem}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:2rem 0 0}
+.stat{background:var(--surface);padding:1.1rem .9rem;text-align:center}
+.stat .n{font:600 1.65rem Inter,sans-serif;letter-spacing:-.02em;color:var(--accent)}
+.stat .l{font:400 .82rem/1.4 Inter,sans-serif;color:var(--muted);margin-top:.25rem}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* loop diagram */
+.loop{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin:1.4rem 0 .4rem;position:relative}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.75rem .7rem;font:400 .84rem/1.45 Inter,sans-serif;position:relative}
+.step b{display:block;font-size:.95rem;margin-bottom:.2rem}
+.step:not(:last-child)::after{content:"→";position:absolute;right:-.62rem;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1rem;z-index:1}
+.step.screen{border-color:var(--accent);background:var(--accent-soft)}
+.loopnote{font:italic 400 .86rem Inter,sans-serif;color:var(--muted);text-align:center}
+@media (max-width:720px){.loop{grid-template-columns:1fr}.step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-.95rem;transform:translateX(-50%)}}
+
+.gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:1.2rem 0}
+.gate{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px;padding:.85rem .9rem;font:400 .86rem/1.5 Inter,sans-serif}
+.gate .t{font-weight:600;color:var(--c);font-size:.95rem}
+.gate .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.1rem 0 .4rem}
+
+figure{margin:1.6rem 0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem}
+figure img{background:#fff;border-radius:4px}
+figcaption{font:400 .86rem/1.55 Inter,sans-serif;color:var(--muted);margin-top:.7rem}
+figcaption b{color:var(--ink)}
+
+.finding{border-left:3px solid var(--accent);padding:.1rem 0 .1rem 1rem;margin:1.2rem 0}
+.finding h3{margin-top:0}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:1.2rem 0}
+table{border-collapse:collapse;width:100%;font:400 .84rem Inter,sans-serif;font-variant-numeric:tabular-nums;min-width:640px}
+th,td{padding:.42rem .6rem;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+thead th{font-weight:600;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em}
+tbody tr.grp td{border-top:2px solid var(--line)}
+tfoot td{font-weight:600;border-bottom:none}
+.neg{color:var(--bad)} .pos{color:var(--good)}
+.tablenote{font:400 .8rem/1.5 Inter,sans-serif;color:var(--muted);padding:.6rem .8rem}
+
+.eq{overflow-x:auto;padding:.4rem 0}
+ol.lim{padding-left:1.3rem} ol.lim li{margin:.35rem 0}
+
+pre{background:var(--code-bg);border-radius:8px;padding:1rem;overflow-x:auto;font:400 .8rem/1.55 "JetBrains Mono",monospace;position:relative}
+.copy{position:absolute;top:.5rem;right:.5rem;font:500 .74rem Inter,sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:6px;padding:.2rem .55rem;cursor:pointer}
+
+footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0 3rem;text-align:center;font:400 .84rem Inter,sans-serif;color:var(--muted)}
+</style>
+</head>
+<body>
+<button class="theme" id="theme" aria-label="Toggle colour theme">◐ theme</button>
+
+<header>
+  <div class="wrap">
+    <div class="venue">Anonymous submission · under double-blind review</div>
+    <h1>Learning From Itself Without Losing Itself
+      <span class="sub">A Label-Free Defense Against Model Collapse in LLMs</span></h1>
+    <div class="authors">Anonymous Authors</div>
+    <div class="btns">
+      <a class="btn" href="static/paper.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Paper</a>
+      <a class="btn ghost" id="code-link" href="../"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Code &amp; logs</a>
+      <a class="btn ghost" href="#bibtex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/></svg>BibTeX</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="tldr"><b>TL;DR</b> Model collapse is a property of the <em>admitted training distribution</em>, not of who wrote the data. The Anti-Collapse Protocol (ACP) screens a model's own synthetic data using cross-route consensus plus four information-geometry gates, with no gold labels and no "AI vs. human" detector. That keeps recursive self-training stable for eight generations.</div>
+
+  <div class="stats">
+    <div class="stat"><div class="n">14 / 16</div><div class="l">settings with accuracy within noise after 8 generations</div></div>
+    <div class="stat"><div class="n">128 / 128</div><div class="l">rounds where admitted labels beat generated labels</div></div>
+    <div class="stat"><div class="n">20.0→11.0%</div><div class="l">label noise in the training pool</div></div>
+    <div class="stat"><div class="n">48% vs 8.5%</div><div class="l">wrong labels: naive loop vs. ACP, at equal accuracy</div></div>
+  </div>
+
+  <h2 id="abstract">Abstract</h2>
+  <p>High-quality human text is becoming a finite bottleneck for scaling language-model training, which pushes the field toward synthetic data. Yet naïve recursive self-feeding induces <strong>model collapse</strong>: rare tokens disappear, outputs converge to a stylistic monoculture, label noise compounds, and rare knowledge decays first.</p>
+  <p>We propose the <strong>Anti-Collapse Protocol (ACP)</strong>, a provenance-agnostic, label-free recipe for repeated synthetic fine-tuning that preserves <em>heterozygosity</em> without detecting "AI vs. human." ACP couples a label-free consensus gate, which admits an answer only when independent reasoning routes agree, with four information-geometry gates: <strong>(T1)</strong> Entropy Banding, <strong>(T2)</strong> Tail-Mass &amp; Novelty Floors, <strong>(T3)</strong> Domain Isotropy, and <strong>(T4)</strong> Red-Queen Critics over a route lattice. It runs as a closed loop with tripwires.</p>
+  <p>In a fully self-consuming loop (four model families × four benchmarks × eight generations, zero gold labels), accuracy stays within noise of the base model in 14 of 16 settings (mean −0.72 pp; none significant after correction). Admitted-label precision exceeds generated precision in all 128 rounds, and the gains are largest where the generator is weakest (<i>r</i> = −0.75). An unfiltered loop matches ACP's accuracy while training on 48% wrong labels: <strong>accuracy is a lagging indicator of collapse</strong>. On open web text, ACP raises rare-token mass by 13–31% while retaining ≥97.6% of teacher–route diversity.</p>
+
+  <h2 id="method">The protocol</h2>
+  <p>ACP treats recursive fine-tuning as a closed-loop <em>data-admission</em> problem. A generator answers each prompt along <i>K</i> = 5 reasoning routes (direct, paraphrase-first, step-by-step, contrastive, Socratic). ACP admits the largest candidate set that satisfies every gate:</p>
+  <div class="eq">$$\mathcal{A}_w^\star=\arg\max_{\mathcal{A}\subseteq\mathcal{C}_w}|\mathcal{A}|\quad\text{s.t.}\quad \mathbf{g}(\mathcal{A}\mid\mathcal{P}_{w-1})=[g_{\mathrm{con}},g_{\mathrm{ent}},g_{\mathrm{nov}},g_{\mathrm{iso}},g_{\mathrm{route}}]\succeq\mathbf{0}$$</div>
+
+  <div class="loop" role="list" aria-label="ACP closed loop">
+    <div class="step" role="listitem"><b>Synthesize</b>5 routes per prompt; the student itself (I) or a two-teacher lattice (II)</div>
+    <div class="step screen" role="listitem"><b>Screen</b>Consensus + T1–T4; no gold labels, no provenance tags</div>
+    <div class="step" role="listitem"><b>Train</b>LoRA / QLoRA on the cumulative pool, route-aware sampling</div>
+    <div class="step" role="listitem"><b>Measure</b>Label precision (audit only), entropy drift, tail mass, route entropy</div>
+    <div class="step" role="listitem"><b>Adapt</b>Tripwires rotate critics when admit &lt; 5%, H<sub>route</sub> &lt; 1 bit, or repetition &gt; 0.40</div>
+  </div>
+  <p class="loopnote">↺ closed loop: generation w → w+1</p>
+
+  <div class="gates">
+    <div class="gate" style="--c:var(--c-con)"><div class="t">Consensus</div><div class="k">correctness</div>Admit only when ≥ <i>m</i> of <i>K</i> routes share the unique modal answer (3 of 5). Open text: an embedding cluster spanning ≥ 2 routes.</div>
+    <div class="gate" style="--c:var(--c-t1)"><div class="t">T1 · Entropy Banding</div><div class="k">learnability</div>Keep samples whose surprisal under the <em>frozen</em> base lies in a quantile band, dropping both rote text and noise. The band centre doubles as a drift meter.</div>
+    <div class="gate" style="--c:var(--c-t2)"><div class="t">T2 · Tail &amp; Novelty</div><div class="k">support</div>Floors on Zipf-tail mass, new 3-grams and distinct tokens, plus an embedding dedup cap to block paraphrastic clones.</div>
+    <div class="gate" style="--c:var(--c-t3)"><div class="t">T3 · Domain Isotropy</div><div class="k">coverage</div>KL cap between the admitted topic histogram and the seed-cluster prior prevents topical lock-in.</div>
+    <div class="gate" style="--c:var(--c-t4)"><div class="t">T4 · Red-Queen Critics</div><div class="k">mechanisms</div>Route caps, route-entropy tracking, rotating critics that vote against sameness, and counterfactual probes.</div>
+  </div>
+
+  <h2 id="results">Results</h2>
+  <p><strong>Regime I (self-consuming).</strong> Gemma-2-9B, Llama-3.1-8B, Mistral-7B and Qwen2.5-7B each generate their <em>own</em> training data for GSM8K, ARC-Challenge, CommonsenseQA and BoolQ. Each generation answers 400 fresh questions × 5 routes; ACP filters, the student is LoRA-tuned on the cumulative pool, and this repeats 8 times. Gold labels are used only for evaluation.</p>
+
+</main>
+
+<div class="wrap wide">
+  <figure>
+    <img src="static/figures/main_selfconsumption_overview.png" alt="Three panels: accuracy change over 8 generations stays near zero; admitted precision lies above generated precision in all 128 rounds; naive loop matches ACP accuracy but has 48% wrong labels." loading="lazy">
+    <figcaption><b>Eight generations of label-free self-consumption.</b> (a) Accuracy change vs. the base model for 16 model–task settings. (b) Label precision of admitted vs. generated data: every one of the 128 rounds lies above <i>y = x</i>, and the lift grows as the generator weakens. (c) Against an unfiltered loop (Mistral/GSM8K) accuracy is indistinguishable, but 48% of the naive pool is mislabelled versus 8.5% under ACP.</figcaption>
+  </figure>
+</div>
+
+<main class="wrap">
+  <div class="finding">
+    <h3>Collapse shows up before headline accuracy fails</h3>
+    <p>The student's own output precision trends downward in 14 of 16 settings (mean −2.6 pp, up to −7.7 pp). Accuracy barely moves: mean change −0.72 pp, and no setting is significant after Bonferroni correction. ACP absorbs about <strong>83% of the generator's erosion</strong> before it reaches the training pool.</p>
+  </div>
+  <div class="finding">
+    <h3>Accuracy is a lagging indicator</h3>
+    <p>After four generations the naive loop scores 58.2% on GSM8K versus 58.0% for ACP. Judged on accuracy alone, filtering looks unnecessary, but the naive pool holds 3,849 mislabelled examples (48.1%) against ACP's 233 (8.5%). That is a <strong>16.5× difference</strong>. A self-consuming loop can look healthy on its benchmark while half its training data is wrong.</p>
+  </div>
+  <div class="finding">
+    <h3>Stability without collapsing diversity</h3>
+    <p>Admitted routes stay near-uniform (route entropy 2.30 of a maximal 2.32 bits), counterfactual probes are caught at 0.54–0.73, and no tripwire fires in Regime I.</p>
+  </div>
+</main>
+
+<div class="wrap wide">
+  <figure>
+    <img src="static/figures/main_recursive_dynamics.png" alt="Dashboard of 16 settings over 8 generations across synthesize, screen, train and measure stages." loading="lazy">
+    <figcaption><b>Recursive dynamics dashboard (Regime I, 16 settings × 8 generations).</b> The student's own label precision erodes, while consensus keeps admitted precision flat and above it. The T1 band drifts upward, route entropy stays within 3% of maximum, the pool grows linearly, and accuracy stays near base.</figcaption>
+  </figure>
+</div>
+
+<main class="wrap">
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Student</th><th>Task</th><th>G0</th><th>G4</th><th>G8</th><th>Δ<sub>8</sub></th><th><i>p</i></th><th>gen. prec.</th><th>adm. prec.</th><th>noise ↓</th><th>admit</th></tr>
+      </thead>
+      <tbody>
+        <tr class="grp"><td>Gemma-2-9B</td><td>GSM8K</td><td>88.9</td><td>89.2</td><td>87.9</td><td class="neg">−1.0</td><td>.43</td><td>88.9</td><td>95.8</td><td>62%</td><td>26%</td></tr>
+        <tr><td></td><td>ARC-C</td><td>91.7</td><td>91.6</td><td>91.0</td><td class="neg">−0.8</td><td>.51</td><td>91.7</td><td>94.5</td><td>34%</td><td>59%</td></tr>
+        <tr><td></td><td>CSQA</td><td>79.0</td><td>80.1</td><td>79.8</td><td class="pos">+0.8</td><td>.62</td><td>75.7</td><td>80.1</td><td>18%</td><td>71%</td></tr>
+        <tr><td></td><td>BoolQ</td><td>88.1</td><td>87.5</td><td>87.2</td><td class="neg">−0.9</td><td>.24</td><td>85.9</td><td>89.1</td><td>22%</td><td>69%</td></tr>
+        <tr class="grp"><td>Llama-3.1-8B</td><td>GSM8K</td><td>85.9</td><td>85.7</td><td>84.3</td><td class="neg">−1.6</td><td>.25</td><td>87.4</td><td>98.9</td><td>91%</td><td>53%</td></tr>
+        <tr><td></td><td>ARC-C</td><td>87.2</td><td>85.0</td><td>83.6</td><td class="neg">−3.6</td><td>.01</td><td>81.7</td><td>92.9</td><td>61%</td><td>61%</td></tr>
+        <tr><td></td><td>CSQA</td><td>77.4</td><td>77.3</td><td>77.4</td><td>+0.0</td><td>1.0</td><td>72.0</td><td>80.2</td><td>29%</td><td>66%</td></tr>
+        <tr><td></td><td>BoolQ</td><td>81.9</td><td>80.4</td><td>81.2</td><td class="neg">−0.7</td><td>.48</td><td>73.8</td><td>92.2</td><td>70%</td><td>48%</td></tr>
+        <tr class="grp"><td>Mistral-7B</td><td>GSM8K</td><td>56.8</td><td>58.0</td><td>56.7</td><td class="neg">−0.1</td><td>.97</td><td>54.7</td><td>91.6</td><td>81%</td><td>34%</td></tr>
+        <tr><td></td><td>ARC-C</td><td>77.0</td><td>78.7</td><td>75.3</td><td class="neg">−1.7</td><td>.33</td><td>74.5</td><td>86.0</td><td>45%</td><td>58%</td></tr>
+        <tr><td></td><td>CSQA</td><td>70.5</td><td>71.8</td><td>71.3</td><td class="pos">+0.7</td><td>.69</td><td>66.5</td><td>76.3</td><td>29%</td><td>63%</td></tr>
+        <tr><td></td><td>BoolQ</td><td>83.5</td><td>82.0</td><td>83.5</td><td>−0.0</td><td>.97</td><td>82.6</td><td>86.1</td><td>20%</td><td>61%</td></tr>
+        <tr class="grp"><td>Qwen2.5-7B</td><td>GSM8K</td><td>90.3</td><td>89.8</td><td>90.1</td><td class="neg">−0.2</td><td>.90</td><td>92.3</td><td>97.4</td><td>67%</td><td>59%</td></tr>
+        <tr><td></td><td>ARC-C</td><td>91.5</td><td>91.5</td><td>89.0</td><td class="neg">−2.5</td><td>.04</td><td>89.7</td><td>93.3</td><td>35%</td><td>66%</td></tr>
+        <tr><td></td><td>CSQA</td><td>82.2</td><td>81.7</td><td>81.3</td><td class="neg">−0.9</td><td>.56</td><td>80.2</td><td>84.2</td><td>20%</td><td>71%</td></tr>
+        <tr><td></td><td>BoolQ</td><td>84.3</td><td>85.0</td><td>85.2</td><td class="pos">+0.9</td><td>.32</td><td>83.2</td><td>86.3</td><td>18%</td><td>68%</td></tr>
+      </tbody>
+      <tfoot>
+        <tr class="grp"><td>Mean</td><td></td><td>82.3</td><td>82.2</td><td>81.6</td><td>−0.72</td><td></td><td>80.0</td><td>89.0</td><td>44%</td><td>58%</td></tr>
+      </tfoot>
+    </table>
+    <div class="tablenote">Accuracy (%) after 0, 4 and 8 self-consuming generations. <i>p</i>: two-sided two-proportion test of G8 vs. G0; none significant after Bonferroni correction (α = 0.05/16). Precisions averaged over 8 rounds; "noise ↓" is the relative reduction of mislabelled samples; "admit" is the share of 2,000 candidates admitted per round.</div>
+  </div>
+
+  <h2 id="theory">Why consensus works, and when it does not</h2>
+  <p>Let <i>K</i> routes each be correct with probability <i>p</i> and spread wrong answers over <i>L</i> alternatives. If route answers are conditionally independent, the precision of <i>m</i>-of-<i>K</i> consensus satisfies</p>
+  <div class="eq">$$\pi_{\perp}(p)\;\geq\;\frac{A(p)}{A(p)+L\,\bar F_{K}\!\big(m;\tfrac{1-p}{L}\big)},\qquad A(p)=\bar F_K(m;p),\quad \bar F_K(m;q)=\Pr[\mathrm{Bin}(K,q)\geq m]$$</div>
+  <p>The lift grows as the generator weakens. Routes of one model are not independent, though: a knowledge gap affects every route. Modelling a common-mode fraction ρ of prompts and inverting at the observed precision gives a consistent ordering for every student: <strong>GSM8K (ρ̂ = 0.09–0.38) &lt; ARC-C (0.36–0.66) &lt; CSQA (0.64–0.80)</strong>. Routes decorrelate <em>reasoning</em> errors but not <em>knowledge</em> errors, so the lever for further gains is decorrelating routes.</p>
+</main>
+
+<div class="wrap wide">
+  <figure>
+    <img src="static/figures/main_consensus_mechanisms.png" alt="Common-mode error fraction by task, label precision relative to round 1, and T1 band drift versus accuracy change." loading="lazy">
+    <figcaption><b>Mechanisms.</b> (a) Route errors are least correlated on multi-step math and most correlated on knowledge-heavy tasks. (b) The student's own outputs erode; admitted data does not. (c) The T1 band drifts by −3 to +84% under self-consumption, yet drift is unrelated to accuracy change.</figcaption>
+  </figure>
+</div>
+
+<main class="wrap">
+  <h2 id="openweb">Distributional health on open web text</h2>
+  <p><strong>Regime II.</strong> Four backbones are QLoRA-tuned on FineWeb continuations from a two-teacher lattice (Qwen2.5-7B-I, Mistral-7B-I) × five routes, for 8 rounds.</p>
+  <ul>
+    <li><strong>Tail support is enriched:</strong> admitted text carries 1.13–1.31× the rare-token mass of the generated pool in 31 of 32 backbone-rounds.</li>
+    <li><strong>The lattice stays plural:</strong> per-cell admission ranges from 21% to 63%, yet the admitted pool keeps 97.6–98.5% of maximal teacher–route entropy.</li>
+    <li><strong>We audit our own metric:</strong> size-matching shows that 85% of the apparent repetition gain is an artifact of pool size. A genuine reduction of 0.014 remains, positive in 8 of 8 rounds.</li>
+  </ul>
+</main>
+
+<div class="wrap wide">
+  <figure>
+    <img src="static/figures/main_openweb_health.png" alt="Open-web results: tail mass, entropy dispersion, size-matched repetition, and teacher-route admission lattice." loading="lazy">
+    <figcaption><b>Regime II: generated vs. admitted data, four backbones × 8 rounds.</b> (a) +13–31% Zipf-tail mass. (b) Entropy-dispersion compression (by construction; a sanity check). (c) Most of the raw repetition gain disappears after size-matching. (d) Admission varies up to 3× across teacher × route cells, yet ≥ 97.6% of maximal joint entropy is retained.</figcaption>
+  </figure>
+</div>
+
+<main class="wrap">
+  <h2 id="limitations">Scope &amp; limitations</h2>
+  <p>ACP is a controlled anti-collapse protocol for recursive synthetic <em>fine-tuning</em>, not a proof that synthetic recursion is safe in general.</p>
+  <ol class="lim">
+    <li>7–9B students with LoRA/QLoRA; frontier-scale pre-training is not studied.</li>
+    <li>Eight generations; longer chains may expose delayed tail erosion.</li>
+    <li>Some diagnostics are partly protocol-internal (e.g. entropy-dispersion compression follows from T1).</li>
+    <li>No threshold sweeps or per-gate ablations; the unfiltered baseline covers one model–task pair for four generations.</li>
+    <li>Consensus cannot remove errors shared across routes (ρ̂ up to 0.80 on knowledge tasks).</li>
+    <li>T3 and the critic votes never bound at our settings; their role was monitoring, not filtering.</li>
+    <li>ARC-C's prompt pool is exhausted after three rounds, and it is the only task with a consistent decline.</li>
+  </ol>
+
+  <h2 id="repro">Reproduce</h2>
+  <p>Every number and data figure in the paper is regenerated from the released per-round logs.</p>
+<pre><code>pip install -r requirements.txt
+cd analysis
+python expB.py &amp;&amp; python expA.py &amp;&amp; python consensus_bound.py
+python repetition_audit.py
+python make_figures_acl.py</code></pre>
+
+  <h2 id="bibtex">BibTeX</h2>
+<pre id="bib"><button class="copy" data-target="bib-code">copy</button><code id="bib-code">@inproceedings{anonymous2026acp,
+  title     = {Learning From Itself Without Losing Itself:
+               A Label-Free Defense Against Model Collapse in LLMs},
+  author    = {Anonymous},
+  booktitle = {Under review},
+  year      = {2026}
+}</code></pre>
+</main>
+
+<footer>
+  <div class="wrap">This page is anonymized for double-blind review. Author information will be added after the review period.</div>
+</footer>
+
+<script>
+// Theme toggle (per-viewer convenience only)
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('acp-theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark = root.getAttribute('data-theme')==='dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('acp-theme',next);}catch(e){}
+  });
+})();
+// On anonymous.4open.science the site is served at /w/<id>/ and the repo at /r/<id>/
+(function(){
+  var m=location.pathname.match(/^\/w\/([^\/]+)/);
+  if(m) document.getElementById('code-link').href='/r/'+m[1]+'/';
+})();
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.target).innerText;
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='copied';setTimeout(function(){b.textContent='copy'},1500)},function(){});
+  });
+});
+document.addEventListener('DOMContentLoaded',function(){
+  if(window.renderMathInElement) renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true}]});
+});
+</script>
+</body>
+</html>

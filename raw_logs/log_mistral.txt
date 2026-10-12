@@ -1,0 +1,499 @@
+6.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.6s	3	0.00s - to python to disable frozen modules.
+6.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.1s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s	7	0.00s - to python to disable frozen modules.
+7.1s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.3s	9	[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.0 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.0/44.0 kB[0m [31m1.9 MB/s[0m eta [36m0:00:00[0m
+12.5s	10	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/12.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━[0m [32m7.2/12.0 MB[0m [31m215.6 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m12.0/12.0 MB[0m [31m232.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m12.0/12.0 MB[0m [31m232.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m12.0/12.0 MB[0m [31m103.3 MB/s[0m eta [36m0:00:00[0m
+12.6s	11	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/835.4 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m835.4/835.4 kB[0m [31m36.2 MB/s[0m eta [36m0:00:00[0m
+12.6s	12	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/394.3 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m394.3/394.3 kB[0m [31m19.4 MB/s[0m eta [36m0:00:00[0m
+13.1s	13	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/43.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.6/43.1 MB[0m [31m228.8 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.4/43.1 MB[0m [31m150.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m15.7/43.1 MB[0m [31m130.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━[0m [32m23.4/43.1 MB[0m [31m216.9 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━[0m [32m28.3/43.1 MB[0m [31m232.3 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━[0m [32m29.8/43.1 MB[0m [31m120.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━[0m [32m38.2/43.1 MB[0m [31m123.1 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m43.1/43.1 MB[0m [31m238.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m43.1/43.1 MB[0m [31m238.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m43.1/43.1 MB[0m [31m238.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m43.1/43.1 MB[0m [31m238.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m43.1/43.1 MB[0m [31m238.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m43.1/43.1 MB[0m [31m49.3 MB/s[0m eta [36m0:00:00[0m
+13.1s	14	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/559.1 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m559.1/559.1 kB[0m [31m21.3 MB/s[0m eta [36m0:00:00[0m
+13.1s	15	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/566.4 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m566.4/566.4 kB[0m [31m28.3 MB/s[0m eta [36m0:00:00[0m
+13.2s	16	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.3 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.3/3.3 MB[0m [31m197.3 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.3/3.3 MB[0m [31m73.4 MB/s[0m eta [36m0:00:00[0m
+30.9s	17	[?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+30.9s	18	gradio 6.26.0 requires huggingface-hub<2.0,>=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.
+30.9s	19	diffusers 0.40.0 requires huggingface-hub<2.0,>=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.[0m[31m
+75.7s	20	Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+75.7s	21	
+75.7s	22	Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+75.7s	23	WARNING:huggingface_hub._login:Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+75.7s	24	
+75.7s	25	WARNING:huggingface_hub._login:Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+75.8s	26	[0mcuda:0  Tesla T4  15.6 GB
+75.8s	27	cuda:1  Tesla T4  15.6 GB
+75.8s	28	T4Config(USE_T4=True, LANGUAGE='en', SAVE_DIR='/kaggle/working/anticollapse/t4_results/mistral_en_real', ROUTES=['direct', 'paraphrase', 'expand', 'contrast', 'socratic'], GENERATION_MAX_NEW_TOKENS_PLAIN=256, GENERATION_MAX_NEW_TOKENS_ROUTE=320, GENERATION_TEMPERATURE=0.9, GENERATION_TOP_P=0.95, GENERATION_BATCH_SIZE=16, GENERATION_MAX_INPUT_TOKENS=512, USE_CHAT_TEMPLATE=True, TEACHERS_PER_ROUTE=2, CORRECTNESS_MIN_ROUTES=2, CORRECTNESS_SIM_THRESHOLD=0.55, MIN_ROUTE_ENTROPY_BITS=1.6, MAX_ROUTE_SHARE=0.45, CRITIC_NAMES=['template', 'style', 'entropy_shape', 'lexical_diversity'], CRITIC_REJECT_VOTES_NEEDED=2, CRITIC_ROTATION_EVERY=3, TRIPWIRE_MIN_ACCEPT_RATE=0.05, TRIPWIRE_MAX_REPETITION=0.4, TRIPWIRE_MIN_ROUTE_ENTROPY=1.0, COUNTERFACTUAL_RATE=0.15, ENTROPY_BATCH_SIZE=8, ENTROPY_MAX_TOKENS=150, TRAIN_EPOCHS_PER_ROUND=1, TRAIN_BATCH_SIZE=2, TRAIN_GRAD_ACCUM=8, TRAIN_LR=0.0001, TRAIN_MAX_LEN=512, TRAIN_MAX_STEPS_PER_ROUND=50, ROUTE_UPWEIGHT_FACTOR=2.0)
+77.3s	29	`torch_dtype` is deprecated! Use `dtype` instead!
+77.3s	30	
+77.3s	31	`torch_dtype` is deprecated! Use `dtype` instead!
+178.1s	32	trainable params: 13,631,488 || all params: 7,261,655,040 || trainable%: 0.1877
+178.1s	33	Student loaded: mistralai/Mistral-7B-v0.3 (4-bit) on cuda:0
+178.1s	34	Reference model = student with adapters disabled (frozen base weights, no extra copy).
+181.7s	35	Embedder loaded
+181.7s	36	  [mem after student] cuda:0 alloc=4.3G reserved=7.3G | cuda:1 alloc=0.0G reserved=0.0G
+181.7s	37	Streaming 2000 seed documents from FineWeb sample-10BT...
+189.0s	38	Loaded 2000 seed documents
+190.0s	39	Seed Tail Floor: 0.0034
+192.9s	40	T1/T2/T3 gates ready
+192.9s	41	T3 target distribution: [0.156 0.116 0.181 0.059 0.317 0.041 0.087 0.043]
+192.9s	42	Metrics ready
+193.0s	43	Critic rotation schedule (deterministic per block):
+193.0s	44	  round 1: ['lexical_diversity', 'style', 'template']
+193.0s	45	  round 2: ['lexical_diversity', 'style', 'template']
+193.0s	46	  round 3: ['lexical_diversity', 'style', 'template']
+193.0s	47	  round 4: ['style', 'entropy_shape', 'template']
+193.0s	48	  round 5: ['style', 'entropy_shape', 'template']
+193.0s	49	  round 6: ['style', 'entropy_shape', 'template']
+193.0s	50	  round 7: ['template', 'lexical_diversity', 'entropy_shape']
+193.0s	51	  round 8: ['template', 'lexical_diversity', 'entropy_shape']
+193.0s	52	  round 9: ['template', 'lexical_diversity', 'entropy_shape']
+193.0s	53	
+193.0s	54	================================================================================
+193.0s	55	ROUND 1 / 8
+193.0s	56	================================================================================
+193.0s	57	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+240.0s	58	Autosave too slow: 11.19 sec, over 25% limit. Backing off to 60 sec
+327.6s	59	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=7.3G | cuda:1 alloc=5.5G reserved=7.2G
+434.0s	60	    teacher_primary/direct: 40 outputs
+541.0s	61	    teacher_primary/paraphrase: 40 outputs
+683.3s	62	    teacher_primary/expand: 40 outputs
+826.5s	63	    teacher_primary/contrast: 40 outputs
+967.7s	64	    teacher_primary/socratic: 40 outputs
+968.7s	65	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.3G | cuda:1 alloc=0.0G reserved=0.0G
+968.7s	66	  teacher_primary done in 12.9 min
+968.7s	67	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+1101.2s	68	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.3G | cuda:1 alloc=4.1G reserved=7.2G
+1222.9s	69	    teacher_mistral/direct: 40 outputs
+1369.7s	70	    teacher_mistral/paraphrase: 40 outputs
+1525.1s	71	    teacher_mistral/expand: 40 outputs
+1681.2s	72	    teacher_mistral/contrast: 40 outputs
+1836.6s	73	    teacher_mistral/socratic: 40 outputs
+1837.4s	74	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.3G | cuda:1 alloc=0.0G reserved=0.0G
+1837.4s	75	  teacher_mistral done in 14.5 min
+1837.6s	76	Generated: 400 route candidates
+1886.9s	77	
+1886.9s	78	METRICS (generated) ROUND 1
+1886.9s	79	  Heaps beta: 0.785 | V=8630 | N=102751
+1886.9s	80	  Tail Mass:  0.845
+1886.9s	81	  Repetition: 0.532
+1886.9s	82	  Entropy:    3.211 +/- 0.580
+1886.9s	83	Entropy band: 2.668 - 3.617
+1886.9s	84	After correctness gate: 350
+1893.6s	85	  t4 stats: {'input_candidates': 350, 'active_critics': 'lexical_diversity,style,template', 'cf_probes': 48, 'cf_caught': 25, 'cf_catch_rate': 0.5208333333333334, 'reject_t2': 45, 'reject_t1': 138, 'pass_t1t2t3': 167, 'pass_route_diversity': 167, 'pass_critics': 167, 'reject_commit_dup': 2, 'final_accepted': 165, 'final_route_entropy': 2.256389711489061, 'accept_rate': 0.4714285714285714}
+1893.6s	86	
+1893.6s	87	T4 accepted this round: 165
+1893.6s	88	Route entropy: 2.256 bits (max 2.322)
+1893.6s	89	Route distribution: {'contrast': 51, 'direct': 28, 'expand': 37, 'paraphrase': 27, 'socratic': 22}
+1893.9s	90	
+1893.9s	91	METRICS (accepted) ROUND 1
+1893.9s	92	  Heaps beta: 0.815 | V=6441 | N=47325
+1893.9s	93	  Tail Mass:  0.968
+1893.9s	94	  Repetition: 0.432
+1893.9s	95	  Entropy:    3.083 +/- 0.249
+1893.9s	96	  Tripwire adaptation: ['rotate_critics']
+1893.9s	97	
+1893.9s	98	Training on 165 cumulative samples...
+2050.3s	99	  [train] steps=11 avg_loss=1.8171 micro_batches=83 pool=165 time=2.6 min
+2050.6s	100	  [checkpoint] round 1 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+2050.6s	101	Round 1 took 31.0 min | total dataset: 165
+2050.6s	102	
+2050.6s	103	[TIMING] Estimated full run: ~248 min (4.1 h). Kaggle sessions stop at 12 h — lower ROUNDS/QUOTA if this is too close.
+2050.6s	104	
+2050.6s	105	
+2050.6s	106	================================================================================
+2050.6s	107	ROUND 2 / 8
+2050.6s	108	================================================================================
+2050.6s	109	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+2102.4s	110	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+2213.6s	111	    teacher_primary/direct: 40 outputs
+2340.5s	112	    teacher_primary/paraphrase: 40 outputs
+2488.7s	113	    teacher_primary/expand: 40 outputs
+2637.7s	114	    teacher_primary/contrast: 40 outputs
+2786.0s	115	    teacher_primary/socratic: 40 outputs
+2786.8s	116	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+2786.8s	117	  teacher_primary done in 12.3 min
+2786.8s	118	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+2825.3s	119	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+2962.7s	120	    teacher_mistral/direct: 40 outputs
+3136.0s	121	    teacher_mistral/paraphrase: 40 outputs
+3310.0s	122	    teacher_mistral/expand: 40 outputs
+3483.8s	123	    teacher_mistral/contrast: 40 outputs
+3654.8s	124	    teacher_mistral/socratic: 40 outputs
+3655.6s	125	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+3655.6s	126	  teacher_mistral done in 14.5 min
+3655.7s	127	Generated: 400 route candidates
+3704.7s	128	
+3704.7s	129	METRICS (generated) ROUND 2
+3704.7s	130	  Heaps beta: 0.791 | V=9135 | N=102040
+3704.7s	131	  Tail Mass:  0.948
+3704.7s	132	  Repetition: 0.526
+3704.7s	133	  Entropy:    3.084 +/- 0.646
+3704.7s	134	Entropy band: 2.555 - 3.543
+3704.7s	135	After correctness gate: 355
+3708.9s	136	  t4 stats: {'input_candidates': 355, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 28, 'cf_caught': 10, 'cf_catch_rate': 0.35714285714285715, 'reject_t1': 141, 'reject_t2': 48, 'pass_t1t2t3': 166, 'pass_route_diversity': 166, 'pass_critics': 166, 'reject_commit_dup': 7, 'final_accepted': 159, 'final_route_entropy': 2.220062076151387, 'accept_rate': 0.447887323943662}
+3708.9s	137	
+3708.9s	138	T4 accepted this round: 159
+3708.9s	139	Route entropy: 2.220 bits (max 2.322)
+3708.9s	140	Route distribution: {'contrast': 53, 'direct': 22, 'expand': 38, 'paraphrase': 26, 'socratic': 20}
+3709.3s	141	
+3709.3s	142	METRICS (accepted) ROUND 2
+3709.3s	143	  Heaps beta: 0.797 | V=9166 | N=94224
+3709.3s	144	  Tail Mass:  0.921
+3709.3s	145	  Repetition: 0.428
+3709.3s	146	  Entropy:    3.050 +/- 0.279
+3709.3s	147	  Tripwire adaptation: ['rotate_critics']
+3709.3s	148	
+3709.3s	149	Training on 324 cumulative samples...
+4019.0s	150	  [train] steps=21 avg_loss=1.7285 micro_batches=162 pool=324 time=5.2 min
+4019.3s	151	  [checkpoint] round 2 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+4019.3s	152	Round 2 took 32.8 min | total dataset: 324
+4019.3s	153	
+4019.3s	154	================================================================================
+4019.3s	155	ROUND 3 / 8
+4019.3s	156	================================================================================
+4019.3s	157	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+4064.7s	158	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+4172.9s	159	    teacher_primary/direct: 38 outputs
+4298.9s	160	    teacher_primary/paraphrase: 40 outputs
+4446.0s	161	    teacher_primary/expand: 40 outputs
+4593.7s	162	    teacher_primary/contrast: 40 outputs
+4735.4s	163	    teacher_primary/socratic: 40 outputs
+4736.3s	164	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+4736.3s	165	  teacher_primary done in 12.0 min
+4736.3s	166	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+4775.6s	167	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+4903.4s	168	    teacher_mistral/direct: 38 outputs
+5066.3s	169	    teacher_mistral/paraphrase: 40 outputs
+5228.7s	170	    teacher_mistral/expand: 40 outputs
+5392.0s	171	    teacher_mistral/contrast: 40 outputs
+5553.8s	172	    teacher_mistral/socratic: 40 outputs
+5554.6s	173	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+5554.6s	174	  teacher_mistral done in 13.6 min
+5554.8s	175	Generated: 396 route candidates
+5603.8s	176	
+5603.8s	177	METRICS (generated) ROUND 3
+5603.8s	178	  Heaps beta: 0.787 | V=8716 | N=101378
+5603.8s	179	  Tail Mass:  0.998
+5603.8s	180	  Repetition: 0.534
+5603.8s	181	  Entropy:    2.914 +/- 0.527
+5603.8s	182	Entropy band: 2.535 - 3.390
+5603.8s	183	After correctness gate: 358
+5612.1s	184	  t4 stats: {'input_candidates': 358, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 61, 'cf_caught': 35, 'cf_catch_rate': 0.5737704918032787, 'reject_t2': 46, 'reject_t1': 138, 'pass_t1t2t3': 174, 'pass_route_diversity': 174, 'pass_critics': 174, 'reject_commit_dup': 8, 'final_accepted': 166, 'final_route_entropy': 2.284617771277563, 'accept_rate': 0.46368715083798884}
+5612.1s	185	
+5612.1s	186	T4 accepted this round: 166
+5612.1s	187	Route entropy: 2.285 bits (max 2.322)
+5612.1s	188	Route distribution: {'contrast': 45, 'direct': 30, 'expand': 38, 'paraphrase': 30, 'socratic': 23}
+5612.7s	189	
+5612.7s	190	METRICS (accepted) ROUND 3
+5612.7s	191	  Heaps beta: 0.783 | V=10833 | N=141364
+5612.7s	192	  Tail Mass:  1.199
+5612.7s	193	  Repetition: 0.428
+5612.7s	194	  Entropy:    2.945 +/- 0.226
+5612.7s	195	  Tripwire adaptation: ['rotate_critics']
+5612.7s	196	
+5612.7s	197	Training on 490 cumulative samples...
+6073.9s	198	  [train] steps=31 avg_loss=1.6276 micro_batches=245 pool=490 time=7.7 min
+6074.2s	199	  [checkpoint] round 3 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+6074.2s	200	Round 3 took 34.2 min | total dataset: 490
+6074.2s	201	
+6074.2s	202	================================================================================
+6074.2s	203	ROUND 4 / 8
+6074.2s	204	================================================================================
+6074.2s	205	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+6121.4s	206	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+6225.9s	207	    teacher_primary/direct: 39 outputs
+6347.6s	208	    teacher_primary/paraphrase: 40 outputs
+6490.4s	209	    teacher_primary/expand: 40 outputs
+6633.6s	210	    teacher_primary/contrast: 40 outputs
+6767.5s	211	    teacher_primary/socratic: 40 outputs
+6768.3s	212	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+6768.3s	213	  teacher_primary done in 11.6 min
+6768.3s	214	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+6812.9s	215	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+6936.7s	216	    teacher_mistral/direct: 39 outputs
+7091.5s	217	    teacher_mistral/paraphrase: 40 outputs
+7249.6s	218	    teacher_mistral/expand: 40 outputs
+7409.3s	219	    teacher_mistral/contrast: 40 outputs
+7567.2s	220	    teacher_mistral/socratic: 40 outputs
+7568.0s	221	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+7568.0s	222	  teacher_mistral done in 13.3 min
+7568.2s	223	Generated: 398 route candidates
+7617.3s	224	
+7617.3s	225	METRICS (generated) ROUND 4
+7617.3s	226	  Heaps beta: 0.788 | V=8818 | N=101703
+7617.3s	227	  Tail Mass:  0.940
+7617.3s	228	  Repetition: 0.529
+7617.3s	229	  Entropy:    3.093 +/- 0.566
+7617.3s	230	Entropy band: 2.635 - 3.486
+7617.3s	231	After correctness gate: 356
+7623.7s	232	  t4 stats: {'input_candidates': 356, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 45, 'cf_caught': 24, 'cf_catch_rate': 0.5333333333333333, 'reject_t1': 144, 'reject_t2': 42, 'pass_t1t2t3': 170, 'pass_route_diversity': 170, 'pass_critics': 170, 'reject_commit_dup': 2, 'final_accepted': 168, 'final_route_entropy': 2.260324079046945, 'accept_rate': 0.47191011235955055}
+7623.7s	233	
+7623.7s	234	T4 accepted this round: 168
+7623.7s	235	Route entropy: 2.260 bits (max 2.322)
+7623.7s	236	Route distribution: {'contrast': 53, 'direct': 29, 'expand': 30, 'paraphrase': 33, 'socratic': 23}
+7624.4s	237	
+7624.4s	238	METRICS (accepted) ROUND 4
+7624.4s	239	  Heaps beta: 0.773 | V=11986 | N=189196
+7624.4s	240	  Tail Mass:  0.981
+7624.4s	241	  Repetition: 0.434
+7624.4s	242	  Entropy:    3.032 +/- 0.233
+7624.4s	243	  Tripwire adaptation: ['rotate_critics']
+7624.4s	244	
+7624.4s	245	Training on 658 cumulative samples...
+8253.6s	246	  [train] steps=42 avg_loss=1.5635 micro_batches=329 pool=658 time=10.5 min
+8253.9s	247	  [checkpoint] round 4 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+8253.9s	248	Round 4 took 36.3 min | total dataset: 658
+8253.9s	249	
+8253.9s	250	================================================================================
+8253.9s	251	ROUND 5 / 8
+8253.9s	252	================================================================================
+8253.9s	253	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+8299.5s	254	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+8402.9s	255	    teacher_primary/direct: 38 outputs
+8518.4s	256	    teacher_primary/paraphrase: 40 outputs
+8660.7s	257	    teacher_primary/expand: 40 outputs
+8803.4s	258	    teacher_primary/contrast: 40 outputs
+8945.4s	259	    teacher_primary/socratic: 40 outputs
+8946.3s	260	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+8946.3s	261	  teacher_primary done in 11.5 min
+8946.3s	262	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+8993.3s	263	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+9114.6s	264	    teacher_mistral/direct: 40 outputs
+9256.1s	265	    teacher_mistral/paraphrase: 40 outputs
+9411.1s	266	    teacher_mistral/expand: 40 outputs
+9567.2s	267	    teacher_mistral/contrast: 40 outputs
+9722.9s	268	    teacher_mistral/socratic: 40 outputs
+9723.7s	269	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+9723.7s	270	  teacher_mistral done in 13.0 min
+9723.9s	271	Generated: 398 route candidates
+9772.5s	272	
+9772.5s	273	METRICS (generated) ROUND 5
+9772.5s	274	  Heaps beta: 0.787 | V=8602 | N=100229
+9772.5s	275	  Tail Mass:  0.849
+9772.5s	276	  Repetition: 0.527
+9772.5s	277	  Entropy:    2.986 +/- 0.646
+9772.5s	278	Entropy band: 2.489 - 3.514
+9772.5s	279	After correctness gate: 355
+9779.5s	280	  t4 stats: {'input_candidates': 355, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 51, 'cf_caught': 25, 'cf_catch_rate': 0.49019607843137253, 'reject_t2': 44, 'reject_t1': 139, 'pass_t1t2t3': 172, 'pass_route_diversity': 172, 'pass_critics': 172, 'reject_commit_dup': 2, 'final_accepted': 170, 'final_route_entropy': 2.259282485496933, 'accept_rate': 0.4788732394366197}
+9779.5s	281	
+9779.5s	282	T4 accepted this round: 170
+9779.5s	283	Route entropy: 2.259 bits (max 2.322)
+9779.5s	284	Route distribution: {'contrast': 45, 'direct': 28, 'expand': 47, 'paraphrase': 28, 'socratic': 22}
+9780.3s	285	
+9780.3s	286	METRICS (accepted) ROUND 5
+9780.3s	287	  Heaps beta: 0.765 | V=12914 | N=238401
+9780.3s	288	  Tail Mass:  1.075
+9780.3s	289	  Repetition: 0.434
+9780.3s	290	  Entropy:    2.939 +/- 0.292
+9780.3s	291	  Tripwire adaptation: ['rotate_critics']
+9780.3s	292	
+9780.3s	293	Training on 828 cumulative samples...
+10542.6s	294	  [train] steps=50 avg_loss=1.5248 micro_batches=400 pool=828 time=12.7 min
+10542.9s	295	  [checkpoint] round 5 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+10542.9s	296	Round 5 took 38.2 min | total dataset: 828
+10542.9s	297	
+10542.9s	298	================================================================================
+10542.9s	299	ROUND 6 / 8
+10542.9s	300	================================================================================
+10542.9s	301	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+10590.0s	302	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+10696.1s	303	    teacher_primary/direct: 39 outputs
+10812.3s	304	    teacher_primary/paraphrase: 40 outputs
+10957.4s	305	    teacher_primary/expand: 40 outputs
+11103.2s	306	    teacher_primary/contrast: 40 outputs
+11248.2s	307	    teacher_primary/socratic: 40 outputs
+11249.0s	308	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+11249.0s	309	  teacher_primary done in 11.8 min
+11249.0s	310	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+11299.5s	311	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+11424.4s	312	    teacher_mistral/direct: 38 outputs
+11568.9s	313	    teacher_mistral/paraphrase: 40 outputs
+11728.2s	314	    teacher_mistral/expand: 40 outputs
+11888.3s	315	    teacher_mistral/contrast: 40 outputs
+12048.0s	316	    teacher_mistral/socratic: 40 outputs
+12048.8s	317	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+12048.8s	318	  teacher_mistral done in 13.3 min
+12049.0s	319	Generated: 397 route candidates
+12097.8s	320	
+12097.8s	321	METRICS (generated) ROUND 6
+12097.8s	322	  Heaps beta: 0.782 | V=8256 | N=101819
+12097.8s	323	  Tail Mass:  0.953
+12097.8s	324	  Repetition: 0.545
+12097.8s	325	  Entropy:    3.102 +/- 0.860
+12097.8s	326	Entropy band: 2.588 - 3.531
+12097.8s	327	After correctness gate: 352
+12103.8s	328	  t4 stats: {'input_candidates': 352, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 43, 'cf_caught': 23, 'cf_catch_rate': 0.5348837209302325, 'reject_t1': 135, 'reject_t2': 30, 'pass_t1t2t3': 187, 'pass_route_diversity': 187, 'pass_critics': 187, 'reject_commit_dup': 10, 'final_accepted': 177, 'final_route_entropy': 2.26940393628007, 'accept_rate': 0.5028409090909091}
+12103.8s	329	
+12103.8s	330	T4 accepted this round: 177
+12103.8s	331	Route entropy: 2.269 bits (max 2.322)
+12103.8s	332	Route distribution: {'contrast': 54, 'direct': 27, 'expand': 31, 'paraphrase': 37, 'socratic': 28}
+12104.8s	333	
+12104.8s	334	METRICS (accepted) ROUND 6
+12104.8s	335	  Heaps beta: 0.757 | V=13606 | N=287820
+12104.8s	336	  Tail Mass:  1.052
+12104.8s	337	  Repetition: 0.457
+12104.8s	338	  Entropy:    3.011 +/- 0.256
+12104.8s	339	  Tripwire adaptation: ['rotate_critics']
+12104.8s	340	
+12104.8s	341	Training on 1005 cumulative samples...
+12866.8s	342	  [train] steps=50 avg_loss=1.4867 micro_batches=400 pool=1005 time=12.7 min
+12867.2s	343	  [checkpoint] round 6 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+12867.2s	344	Round 6 took 38.7 min | total dataset: 1005
+12867.2s	345	
+12867.2s	346	================================================================================
+12867.2s	347	ROUND 7 / 8
+12867.2s	348	================================================================================
+12867.2s	349	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+12914.4s	350	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+13018.5s	351	    teacher_primary/direct: 40 outputs
+13128.0s	352	    teacher_primary/paraphrase: 40 outputs
+13270.8s	353	    teacher_primary/expand: 40 outputs
+13414.2s	354	    teacher_primary/contrast: 40 outputs
+13557.1s	355	    teacher_primary/socratic: 40 outputs
+13557.9s	356	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+13557.9s	357	  teacher_primary done in 11.5 min
+13557.9s	358	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+13603.6s	359	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+13726.1s	360	    teacher_mistral/direct: 39 outputs
+13881.5s	361	    teacher_mistral/paraphrase: 40 outputs
+14038.3s	362	    teacher_mistral/expand: 40 outputs
+14196.6s	363	    teacher_mistral/contrast: 40 outputs
+14353.5s	364	    teacher_mistral/socratic: 40 outputs
+14354.4s	365	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+14354.4s	366	  teacher_mistral done in 13.3 min
+14354.5s	367	Generated: 399 route candidates
+14403.9s	368	
+14403.9s	369	METRICS (generated) ROUND 7
+14403.9s	370	  Heaps beta: 0.790 | V=9028 | N=101627
+14403.9s	371	  Tail Mass:  0.960
+14403.9s	372	  Repetition: 0.517
+14403.9s	373	  Entropy:    3.060 +/- 0.575
+14403.9s	374	Entropy band: 2.592 - 3.504
+14403.9s	375	After correctness gate: 358
+14411.8s	376	  t4 stats: {'input_candidates': 358, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 56, 'cf_caught': 23, 'cf_catch_rate': 0.4107142857142857, 'reject_t1': 138, 'reject_t2': 40, 'pass_t1t2t3': 180, 'pass_route_diversity': 180, 'pass_critics': 180, 'reject_commit_dup': 7, 'final_accepted': 173, 'final_route_entropy': 2.246971115215771, 'accept_rate': 0.48324022346368717}
+14411.8s	377	
+14411.8s	378	T4 accepted this round: 173
+14411.8s	379	Route entropy: 2.247 bits (max 2.322)
+14411.8s	380	Route distribution: {'contrast': 56, 'direct': 25, 'expand': 32, 'paraphrase': 36, 'socratic': 24}
+14412.9s	381	
+14412.9s	382	METRICS (accepted) ROUND 7
+14412.9s	383	  Heaps beta: 0.752 | V=14330 | N=336689
+14412.9s	384	  Tail Mass:  1.054
+14412.9s	385	  Repetition: 0.427
+14412.9s	386	  Entropy:    3.013 +/- 0.250
+14412.9s	387	  Tripwire adaptation: ['rotate_critics']
+14412.9s	388	
+14412.9s	389	Training on 1178 cumulative samples...
+15166.9s	390	  [train] steps=50 avg_loss=1.4541 micro_batches=400 pool=1178 time=12.6 min
+15167.2s	391	  [checkpoint] round 7 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+15167.2s	392	Round 7 took 38.3 min | total dataset: 1178
+15167.2s	393	
+15167.2s	394	================================================================================
+15167.2s	395	ROUND 8 / 8
+15167.2s	396	================================================================================
+15167.2s	397	  Loading teacher_primary (Qwen/Qwen2.5-7B-Instruct) on cuda:1 ...
+15223.4s	398	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=5.6G reserved=7.2G
+15326.7s	399	    teacher_primary/direct: 37 outputs
+15429.6s	400	    teacher_primary/paraphrase: 40 outputs
+15570.5s	401	    teacher_primary/expand: 40 outputs
+15712.4s	402	    teacher_primary/contrast: 40 outputs
+15845.1s	403	    teacher_primary/socratic: 40 outputs
+15845.9s	404	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+15845.9s	405	  teacher_primary done in 11.3 min
+15845.9s	406	  Loading teacher_mistral (mistralai/Mistral-7B-Instruct-v0.3) on cuda:1 ...
+15889.5s	407	  [mem teacher loaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=4.1G reserved=7.2G
+16010.8s	408	    teacher_mistral/direct: 39 outputs
+16151.6s	409	    teacher_mistral/paraphrase: 40 outputs
+16306.9s	410	    teacher_mistral/expand: 40 outputs
+16463.5s	411	    teacher_mistral/contrast: 40 outputs
+16619.4s	412	    teacher_mistral/socratic: 40 outputs
+16620.2s	413	  [mem teacher unloaded] cuda:0 alloc=4.3G reserved=4.4G | cuda:1 alloc=0.0G reserved=0.0G
+16620.2s	414	  teacher_mistral done in 12.9 min
+16620.4s	415	Generated: 396 route candidates
+16668.8s	416	
+16668.8s	417	METRICS (generated) ROUND 8
+16668.8s	418	  Heaps beta: 0.787 | V=8594 | N=99909
+16668.8s	419	  Tail Mass:  0.771
+16668.8s	420	  Repetition: 0.528
+16668.8s	421	  Entropy:    2.971 +/- 0.542
+16668.8s	422	Entropy band: 2.512 - 3.426
+16668.8s	423	After correctness gate: 357
+16673.8s	424	  t4 stats: {'input_candidates': 357, 'active_critics': 'template,style,entropy_shape,lexical_diversity', 'cf_probes': 34, 'cf_caught': 17, 'cf_catch_rate': 0.5, 'reject_t2': 43, 'reject_t1': 139, 'pass_t1t2t3': 175, 'pass_route_diversity': 175, 'pass_critics': 175, 'reject_commit_dup': 7, 'final_accepted': 168, 'final_route_entropy': 2.2192050409185984, 'accept_rate': 0.47058823529411764}
+16673.8s	425	
+16673.8s	426	T4 accepted this round: 168
+16673.8s	427	Route entropy: 2.219 bits (max 2.322)
+16673.8s	428	Route distribution: {'contrast': 58, 'direct': 22, 'expand': 35, 'paraphrase': 31, 'socratic': 22}
+16675.0s	429	
+16675.0s	430	METRICS (accepted) ROUND 8
+16675.0s	431	  Heaps beta: 0.747 | V=14893 | N=384421
+16675.0s	432	  Tail Mass:  0.955
+16675.0s	433	  Repetition: 0.431
+16675.0s	434	  Entropy:    2.976 +/- 0.279
+16675.0s	435	  Tripwire adaptation: ['rotate_critics']
+16675.0s	436	
+16675.0s	437	Training on 1346 cumulative samples...
+17427.5s	438	  [train] steps=50 avg_loss=1.4393 micro_batches=400 pool=1346 time=12.5 min
+17427.8s	439	  [checkpoint] round 8 saved to /kaggle/working/anticollapse/t4_results/mistral_en_real
+17427.8s	440	Round 8 took 37.7 min | total dataset: 1346
+17427.8s	441	
+17427.8s	442	Total runtime: 287.2 min
+17427.8s	443	
+17427.8s	444	Experiment complete! Final dataset: 1346 samples
+17431.1s	445	Metrics panel saved to /kaggle/working/anticollapse/t4_results/mistral_en_real/t4_metrics_panel.png
+17431.1s	446	  Diagnostics exported: /kaggle/working/anticollapse/t4_results/mistral_en_real/t4_diagnostics.json, /kaggle/working/anticollapse/t4_results/mistral_en_real/t4_diagnostics.csv
+17433.1s	447	  Dashboard saved: /kaggle/working/anticollapse/t4_results/mistral_en_real/t4_dashboard.png
+17433.1s	448	
+17433.1s	449	==========================================================================================
+17433.1s	450	RESULTS COMPARISON: T4 vs T1-T3 Baseline (Paper Table 1)
+17433.1s	451	==========================================================================================
+17433.1s	452	Round  | Heaps(T1-T3)  | Heaps(T4)   | Rep(T1-T3)  | Rep(T4)   | T4 Accepted 
+17433.1s	453	-----------------------------------------------------------------------------
+17433.1s	454	R1     | 0.771         | 0.815       | 0.288       | 0.432     | 165
+17433.1s	455	R2     | 0.784         | 0.797       | 0.297       | 0.428     | 159
+17433.1s	456	R3     | 0.784         | 0.783       | 0.313       | 0.428     | 166
+17433.1s	457	R4     | 0.778         | 0.773       | 0.269       | 0.434     | 168
+17433.1s	458	R5     | 0.776         | 0.765       | 0.217       | 0.434     | 170
+17433.1s	459	R6     | 0.773         | 0.757       | 0.268       | 0.457     | 177
+17433.1s	460	R7     | 0.768         | 0.752       | 0.303       | 0.427     | 173
+17433.1s	461	R8     | 0.763         | 0.747       | 0.331       | 0.431     | 168
+17433.1s	462	==========================================================================================
+17433.1s	463	Heaps beta >= baseline => vocabulary diversity preserved; Repetition <= baseline => less repetition.
+17433.1s	464	All outputs in: /kaggle/working/anticollapse/t4_results/mistral_en_real
+17439.3s	465	/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+17439.3s	466	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+17439.5s	467	/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+17439.5s	468	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+17440.8s	469	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+17441.0s	470	[NbConvertApp] Writing 1297425 bytes to __notebook__.ipynb
+17443.5s	471	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+17444.6s	472	[NbConvertApp] Support files will be in __results___files/
+17444.6s	473	[NbConvertApp] Making directory __results___files
+17444.6s	474	[NbConvertApp] Making directory __results___files
+17444.6s	475	[NbConvertApp] Writing 1151967 bytes to __results__.html

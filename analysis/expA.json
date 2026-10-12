@@ -1,0 +1,1318 @@
+{
+ "Gemma-2-9B": {
+  "ml": {
+   "generated": {
+    "heaps": [
+     0.8050787811736388,
+     0.8112436756337519,
+     0.8063376960240912,
+     0.8071028082192445,
+     0.8055311656548307,
+     0.8002704107985249,
+     0.8093606903617117,
+     0.8065832463948336
+    ],
+    "tail_mass": [
+     0.719313682358117,
+     0.7816235087446215,
+     0.7363671809725394,
+     0.7411446567476436,
+     0.8571492765345556,
+     0.8771542688174415,
+     0.7876299701012985,
+     0.6187152891673925
+    ],
+    "repetition": [
+     0.4983556792309638,
+     0.4948187680676006,
+     0.5025956953789938,
+     0.4962052081014912,
+     0.4954333539291131,
+     0.513477430957819,
+     0.48312601104479275,
+     0.49675368744909965
+    ],
+    "entropy_mean": [
+     3.61721421957016,
+     3.533143984079361,
+     3.2715694653987883,
+     3.4423210656642915,
+     3.2923509240150453,
+     3.463155959844589,
+     3.4310450387001037,
+     3.362897210121155
+    ],
+    "entropy_std": [
+     0.7575232138751848,
+     0.8922705712303759,
+     0.6563236490635798,
+     0.6470669821658948,
+     0.7520284519816123,
+     1.043609237105072,
+     0.7396637793736824,
+     0.6843035656551777
+    ]
+   },
+   "accepted": {
+    "heaps": [
+     0.8319711050024199,
+     0.8194057020648488,
+     0.8110852176275754,
+     0.8048312305369798,
+     0.800013884882815,
+     0.7946561898376444,
+     0.7919437692953372,
+     0.7897489139201993
+    ],
+    "tail_mass": [
+     0.9831093447680803,
+     1.052548274770497,
+     0.9930809930809932,
+     0.8627513059996834,
+     1.221200708905627,
+     1.0516229488561504,
+     0.9672110393720724,
+     0.883763992929888
+    ],
+    "repetition": [
+     0.3923388678258596,
+     0.3874746089112829,
+     0.3968904325175015,
+     0.3826020421624759,
+     0.3855888787350115,
+     0.4243484093522422,
+     0.3834506507317567,
+     0.38578082038045003
+    ],
+    "entropy_mean": [
+     3.433197407722473,
+     3.3431935548782348,
+     3.2635231375694276,
+     3.3894854831695556,
+     3.2422665143013,
+     3.3752831625938415,
+     3.3097703886032104,
+     3.337432553768158
+    ],
+    "entropy_std": [
+     0.283777892144743,
+     0.3521298611160131,
+     0.2541827804046328,
+     0.26964721771480604,
+     0.30504242847430635,
+     0.3088647116917761,
+     0.321241098150949,
+     0.29247280852783
+    ]
+   }
+  },
+  "diag": [
+   {
+    "round_id": 1,
+    "num_candidates": 350,
+    "num_accepted": 151,
+    "input_candidates": 350,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 48,
+    "cf_caught": 29,
+    "cf_catch_rate": 0.6041666666666666,
+    "reject_t1": 141,
+    "reject_t2": 53,
+    "pass_t1t2t3": 156,
+    "pass_route_diversity": 156,
+    "pass_critics": 156,
+    "reject_commit_dup": 5,
+    "final_accepted": 151,
+    "final_route_entropy": 2.26153940590171,
+    "accept_rate": 0.43142857142857144,
+    "num_generated": 400,
+    "repetition_accepted": 0.3923388678258596
+   },
+   {
+    "round_id": 2,
+    "num_candidates": 355,
+    "num_accepted": 149,
+    "input_candidates": 355,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 28,
+    "cf_caught": 13,
+    "cf_catch_rate": 0.4642857142857143,
+    "reject_t1": 144,
+    "reject_t2": 60,
+    "pass_t1t2t3": 151,
+    "pass_route_diversity": 151,
+    "pass_critics": 151,
+    "reject_commit_dup": 2,
+    "final_accepted": 149,
+    "final_route_entropy": 2.26287129463194,
+    "accept_rate": 0.4197183098591549,
+    "num_generated": 400,
+    "repetition_accepted": 0.3874746089112829
+   },
+   {
+    "round_id": 3,
+    "num_candidates": 358,
+    "num_accepted": 150,
+    "input_candidates": 358,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 61,
+    "cf_caught": 39,
+    "cf_catch_rate": 0.639344262295082,
+    "reject_t2": 61,
+    "reject_t1": 143,
+    "pass_t1t2t3": 154,
+    "pass_route_diversity": 154,
+    "pass_critics": 154,
+    "reject_commit_dup": 4,
+    "final_accepted": 150,
+    "final_route_entropy": 2.278704146979202,
+    "accept_rate": 0.41899441340782123,
+    "num_generated": 396,
+    "repetition_accepted": 0.3968904325175015
+   },
+   {
+    "round_id": 4,
+    "num_candidates": 356,
+    "num_accepted": 150,
+    "input_candidates": 356,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 45,
+    "cf_caught": 26,
+    "cf_catch_rate": 0.5777777777777777,
+    "reject_t2": 61,
+    "reject_t1": 143,
+    "pass_t1t2t3": 152,
+    "pass_route_diversity": 152,
+    "pass_critics": 152,
+    "reject_commit_dup": 2,
+    "final_accepted": 150,
+    "final_route_entropy": 2.267788390288378,
+    "accept_rate": 0.42134831460674155,
+    "num_generated": 398,
+    "repetition_accepted": 0.3826020421624759
+   },
+   {
+    "round_id": 5,
+    "num_candidates": 355,
+    "num_accepted": 142,
+    "input_candidates": 355,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 51,
+    "cf_caught": 27,
+    "cf_catch_rate": 0.5294117647058824,
+    "reject_t2": 72,
+    "reject_t1": 138,
+    "pass_t1t2t3": 145,
+    "pass_route_diversity": 145,
+    "pass_critics": 145,
+    "reject_commit_dup": 3,
+    "final_accepted": 142,
+    "final_route_entropy": 2.234665658242907,
+    "accept_rate": 0.4,
+    "num_generated": 398,
+    "repetition_accepted": 0.3855888787350115
+   },
+   {
+    "round_id": 6,
+    "num_candidates": 352,
+    "num_accepted": 168,
+    "input_candidates": 352,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 43,
+    "cf_caught": 23,
+    "cf_catch_rate": 0.5348837209302325,
+    "reject_t1": 135,
+    "reject_t2": 42,
+    "pass_t1t2t3": 175,
+    "pass_route_diversity": 175,
+    "pass_critics": 175,
+    "reject_commit_dup": 7,
+    "final_accepted": 168,
+    "final_route_entropy": 2.263305087154963,
+    "accept_rate": 0.4772727272727273,
+    "num_generated": 397,
+    "repetition_accepted": 0.4243484093522422
+   },
+   {
+    "round_id": 7,
+    "num_candidates": 358,
+    "num_accepted": 156,
+    "input_candidates": 358,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 56,
+    "cf_caught": 21,
+    "cf_catch_rate": 0.375,
+    "reject_t1": 142,
+    "reject_t2": 56,
+    "pass_t1t2t3": 160,
+    "pass_route_diversity": 160,
+    "pass_critics": 160,
+    "reject_commit_dup": 4,
+    "final_accepted": 156,
+    "final_route_entropy": 2.240404859463848,
+    "accept_rate": 0.43575418994413406,
+    "num_generated": 399,
+    "repetition_accepted": 0.3834506507317567
+   },
+   {
+    "round_id": 8,
+    "num_candidates": 357,
+    "num_accepted": 140,
+    "input_candidates": 357,
+    "active_critics": "template,lexical_diversity,entropy_shape",
+    "cf_probes": 34,
+    "cf_caught": 22,
+    "cf_catch_rate": 0.6470588235294118,
+    "reject_t2": 72,
+    "reject_t1": 143,
+    "pass_t1t2t3": 142,
+    "pass_route_diversity": 142,
+    "pass_critics": 142,
+    "reject_commit_dup": 2,
+    "final_accepted": 140,
+    "final_route_entropy": 2.2405535915720685,
+    "accept_rate": 0.39215686274509803,
+    "num_generated": 396,
+    "repetition_accepted": 0.38578082038045003
+   }
+  ],
+  "teacher": {
+   "teacher_mistral": 520,
+   "teacher_primary": 686
+  },
+  "teacher_route": {
+   "teacher_mistral|contrast": 168,
+   "teacher_primary|direct": 124,
+   "teacher_mistral|expand": 118,
+   "teacher_primary|paraphrase": 117,
+   "teacher_primary|socratic": 105,
+   "teacher_mistral|direct": 87,
+   "teacher_primary|expand": 154,
+   "teacher_primary|contrast": 186,
+   "teacher_mistral|paraphrase": 96,
+   "teacher_mistral|socratic": 51
+  },
+  "per_round_teacher": [
+   {
+    "teacher_mistral": 73,
+    "teacher_primary": 78
+   },
+   {
+    "teacher_primary": 81,
+    "teacher_mistral": 68
+   },
+   {
+    "teacher_mistral": 64,
+    "teacher_primary": 86
+   },
+   {
+    "teacher_mistral": 59,
+    "teacher_primary": 91
+   },
+   {
+    "teacher_mistral": 55,
+    "teacher_primary": 87
+   },
+   {
+    "teacher_mistral": 70,
+    "teacher_primary": 98
+   },
+   {
+    "teacher_mistral": 66,
+    "teacher_primary": 90
+   },
+   {
+    "teacher_mistral": 65,
+    "teacher_primary": 75
+   }
+  ],
+  "n_acc": 1206
+ },
+ "Llama-3-8B": {
+  "ml": {
+   "generated": {
+    "heaps": [
+     0.8092128027785457,
+     0.8151246785676662,
+     0.8102648423633682,
+     0.8109535883534806,
+     0.8098085891634049,
+     0.8053130712407065,
+     0.81237575818366,
+     0.8106335569438586
+    ],
+    "tail_mass": [
+     1.028245926822978,
+     1.00771068513004,
+     0.9919327349164867,
+     1.0145042403106919,
+     1.1148795746728695,
+     1.2322071103668333,
+     1.0958286358511837,
+     0.9402043822500461
+    ],
+    "repetition": [
+     0.4683449203857367,
+     0.463993749858466,
+     0.472803917781136,
+     0.4685115152064132,
+     0.46810582883595153,
+     0.4830442309650701,
+     0.45840426611348495,
+     0.4696587835893895
+    ],
+    "entropy_mean": [
+     3.7731842494010923,
+     3.624063458442688,
+     3.4577067935466768,
+     3.622080484628677,
+     3.4976234126091,
+     3.6254580104351044,
+     3.5730598974227905,
+     3.4973514568805695
+    ],
+    "entropy_std": [
+     0.6669243609506822,
+     0.7409587107549319,
+     0.6008618245019473,
+     0.7338709875755056,
+     0.7427758557242681,
+     0.8810055053912645,
+     0.6674969869183295,
+     0.624352827453024
+    ]
+   },
+   "accepted": {
+    "heaps": [
+     0.8323829270026696,
+     0.8190049982338214,
+     0.8097714200217754,
+     0.8017890388574059,
+     0.7953941633598137,
+     0.7900906248568265,
+     0.7862677475592849,
+     0.7834860862480494
+    ],
+    "tail_mass": [
+     1.2238452427951048,
+     1.169125445955067,
+     1.2274000509294627,
+     1.132032667876588,
+     1.251970077027237,
+     1.3694859266395982,
+     1.2434103699090242,
+     1.181991122384274
+    ],
+    "repetition": [
+     0.3779842080817464,
+     0.3689222090977027,
+     0.3739591026000153,
+     0.37859298078450054,
+     0.3866764340259279,
+     0.402803266654432,
+     0.38130616602900613,
+     0.37124594155844154
+    ],
+    "entropy_mean": [
+     3.6305404806137087,
+     3.5185842442512514,
+     3.469268720149994,
+     3.5593566489219666,
+     3.4852063417434693,
+     3.538909208774567,
+     3.5327862215042116,
+     3.476031720638275
+    ],
+    "entropy_std": [
+     0.23050376304851852,
+     0.29957092387762496,
+     0.26224062940153187,
+     0.2530192385226395,
+     0.3305203142401915,
+     0.27915043921183014,
+     0.30022836544268633,
+     0.31230605819880525
+    ]
+   }
+  },
+  "diag": [
+   {
+    "round_id": 1,
+    "num_candidates": 350,
+    "num_accepted": 173,
+    "input_candidates": 350,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 48,
+    "cf_caught": 24,
+    "cf_catch_rate": 0.5,
+    "reject_t1": 143,
+    "reject_t2": 28,
+    "pass_t1t2t3": 179,
+    "pass_route_diversity": 179,
+    "pass_critics": 179,
+    "reject_commit_dup": 6,
+    "final_accepted": 173,
+    "final_route_entropy": 2.2696847228017596,
+    "accept_rate": 0.4942857142857143,
+    "num_generated": 400,
+    "repetition_accepted": 0.3779842080817464
+   },
+   {
+    "round_id": 2,
+    "num_candidates": 355,
+    "num_accepted": 164,
+    "input_candidates": 355,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 28,
+    "cf_caught": 10,
+    "cf_catch_rate": 0.35714285714285715,
+    "reject_t1": 143,
+    "reject_t2": 42,
+    "pass_t1t2t3": 170,
+    "pass_route_diversity": 170,
+    "pass_critics": 170,
+    "reject_commit_dup": 6,
+    "final_accepted": 164,
+    "final_route_entropy": 2.2243106223497944,
+    "accept_rate": 0.4619718309859155,
+    "num_generated": 400,
+    "repetition_accepted": 0.3689222090977027
+   },
+   {
+    "round_id": 3,
+    "num_candidates": 358,
+    "num_accepted": 163,
+    "input_candidates": 358,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 61,
+    "cf_caught": 28,
+    "cf_catch_rate": 0.45901639344262296,
+    "reject_t2": 46,
+    "reject_t1": 141,
+    "pass_t1t2t3": 171,
+    "pass_route_diversity": 171,
+    "pass_critics": 171,
+    "reject_commit_dup": 8,
+    "final_accepted": 163,
+    "final_route_entropy": 2.2808544937382784,
+    "accept_rate": 0.4553072625698324,
+    "num_generated": 396,
+    "repetition_accepted": 0.3739591026000153
+   },
+   {
+    "round_id": 4,
+    "num_candidates": 356,
+    "num_accepted": 176,
+    "input_candidates": 356,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 45,
+    "cf_caught": 25,
+    "cf_catch_rate": 0.5555555555555556,
+    "reject_t2": 42,
+    "reject_t1": 136,
+    "pass_t1t2t3": 178,
+    "pass_route_diversity": 178,
+    "pass_critics": 178,
+    "reject_commit_dup": 2,
+    "final_accepted": 176,
+    "final_route_entropy": 2.240699460088866,
+    "accept_rate": 0.4943820224719101,
+    "num_generated": 398,
+    "repetition_accepted": 0.37859298078450054
+   },
+   {
+    "round_id": 5,
+    "num_candidates": 355,
+    "num_accepted": 180,
+    "input_candidates": 355,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 51,
+    "cf_caught": 25,
+    "cf_catch_rate": 0.49019607843137253,
+    "reject_t2": 37,
+    "reject_t1": 135,
+    "pass_t1t2t3": 183,
+    "pass_route_diversity": 183,
+    "pass_critics": 183,
+    "reject_commit_dup": 3,
+    "final_accepted": 180,
+    "final_route_entropy": 2.257989702064642,
+    "accept_rate": 0.5070422535211268,
+    "num_generated": 398,
+    "repetition_accepted": 0.3866764340259279
+   },
+   {
+    "round_id": 6,
+    "num_candidates": 352,
+    "num_accepted": 178,
+    "input_candidates": 352,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 43,
+    "cf_caught": 22,
+    "cf_catch_rate": 0.5116279069767442,
+    "reject_t1": 135,
+    "reject_t2": 29,
+    "pass_t1t2t3": 188,
+    "pass_route_diversity": 188,
+    "pass_critics": 188,
+    "reject_commit_dup": 10,
+    "final_accepted": 178,
+    "final_route_entropy": 2.2673519899160346,
+    "accept_rate": 0.5056818181818182,
+    "num_generated": 397,
+    "repetition_accepted": 0.402803266654432
+   },
+   {
+    "round_id": 7,
+    "num_candidates": 358,
+    "num_accepted": 178,
+    "input_candidates": 358,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 56,
+    "cf_caught": 21,
+    "cf_catch_rate": 0.375,
+    "reject_t1": 139,
+    "reject_t2": 36,
+    "pass_t1t2t3": 183,
+    "pass_route_diversity": 183,
+    "pass_critics": 183,
+    "reject_commit_dup": 5,
+    "final_accepted": 178,
+    "final_route_entropy": 2.2453815745893038,
+    "accept_rate": 0.4972067039106145,
+    "num_generated": 399,
+    "repetition_accepted": 0.38130616602900613
+   },
+   {
+    "round_id": 8,
+    "num_candidates": 357,
+    "num_accepted": 160,
+    "input_candidates": 357,
+    "active_critics": "template,lexical_diversity,entropy_shape",
+    "cf_probes": 34,
+    "cf_caught": 20,
+    "cf_catch_rate": 0.5882352941176471,
+    "reject_t2": 51,
+    "reject_t1": 143,
+    "pass_t1t2t3": 163,
+    "pass_route_diversity": 163,
+    "pass_critics": 163,
+    "reject_commit_dup": 3,
+    "final_accepted": 160,
+    "final_route_entropy": 2.2451807337560625,
+    "accept_rate": 0.4481792717086835,
+    "num_generated": 396,
+    "repetition_accepted": 0.37124594155844154
+   }
+  ],
+  "teacher": {
+   "teacher_primary": 758,
+   "teacher_mistral": 614
+  },
+  "teacher_route": {
+   "teacher_primary|contrast": 213,
+   "teacher_primary|direct": 133,
+   "teacher_primary|expand": 168,
+   "teacher_mistral|paraphrase": 122,
+   "teacher_primary|socratic": 112,
+   "teacher_mistral|direct": 98,
+   "teacher_mistral|expand": 142,
+   "teacher_primary|paraphrase": 132,
+   "teacher_mistral|contrast": 192,
+   "teacher_mistral|socratic": 60
+  },
+  "per_round_teacher": [
+   {
+    "teacher_primary": 96,
+    "teacher_mistral": 77
+   },
+   {
+    "teacher_mistral": 70,
+    "teacher_primary": 94
+   },
+   {
+    "teacher_primary": 86,
+    "teacher_mistral": 77
+   },
+   {
+    "teacher_mistral": 86,
+    "teacher_primary": 90
+   },
+   {
+    "teacher_mistral": 77,
+    "teacher_primary": 103
+   },
+   {
+    "teacher_primary": 101,
+    "teacher_mistral": 77
+   },
+   {
+    "teacher_primary": 101,
+    "teacher_mistral": 77
+   },
+   {
+    "teacher_primary": 87,
+    "teacher_mistral": 73
+   }
+  ],
+  "n_acc": 1372
+ },
+ "Mistral-7B-v0.3": {
+  "ml": {
+   "generated": {
+    "heaps": [
+     0.7853509209617949,
+     0.7907546555138656,
+     0.787127751057842,
+     0.7879183375049502,
+     0.7867635738726075,
+     0.7821293057943013,
+     0.7900108561907221,
+     0.7869012961209262
+    ],
+    "tail_mass": [
+     0.8447606349329932,
+     0.9476675813406508,
+     0.9982441949929964,
+     0.9399919373076506,
+     0.8490556625328,
+     0.9526709160372818,
+     0.9603747035728694,
+     0.7707013382177782
+    ],
+    "repetition": [
+     0.5323017031630171,
+     0.5259361616636776,
+     0.5344999358828926,
+     0.5292422961200369,
+     0.5273975336233387,
+     0.5449920446286511,
+     0.5174168027866884,
+     0.5283460783921208
+    ],
+    "entropy_mean": [
+     3.211189166307449,
+     3.08390216588974,
+     2.9139162313938143,
+     3.09280415058136,
+     2.9863043916225434,
+     3.10227730512619,
+     3.059514368772507,
+     2.970886046886444
+    ],
+    "entropy_std": [
+     0.5800246503037175,
+     0.6462988890212701,
+     0.5266130675544973,
+     0.5661330280178151,
+     0.6456658514343877,
+     0.8604837832022351,
+     0.5750194447407195,
+     0.5424867408256707
+    ]
+   },
+   "accepted": {
+    "heaps": [
+     0.8147335755832703,
+     0.7965523080534826,
+     0.783394817304068,
+     0.7729282413275712,
+     0.7645202258148739,
+     0.7572153997341616,
+     0.7519583944744831,
+     0.7472025643342596
+    ],
+    "tail_mass": [
+     0.9677760169043845,
+     0.9211283822682788,
+     1.1985574883326262,
+     0.9805151363104198,
+     1.0750939945127527,
+     1.0522268763026366,
+     1.0538378112914117,
+     0.955333947875639
+    ],
+    "repetition": [
+     0.43204293804412136,
+     0.42795001919058384,
+     0.42849869534780116,
+     0.43383997825677906,
+     0.433663929761808,
+     0.4574851268768465,
+     0.4273962511254809,
+     0.4313339339213509
+    ],
+    "entropy_mean": [
+     3.0832925605773926,
+     3.0498769330978392,
+     2.944886555671692,
+     3.0316254186630247,
+     2.9387961435317993,
+     3.011106462478638,
+     3.0129665160179138,
+     2.9756773805618284
+    ],
+    "entropy_std": [
+     0.24885187417605775,
+     0.27874006526822637,
+     0.22594328227769261,
+     0.23330273432509108,
+     0.29211482065370875,
+     0.2563765932249897,
+     0.2497692885755429,
+     0.27915154958099386
+    ]
+   }
+  },
+  "diag": [
+   {
+    "round_id": 1,
+    "num_candidates": 350,
+    "num_accepted": 165,
+    "input_candidates": 350,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 48,
+    "cf_caught": 25,
+    "cf_catch_rate": 0.5208333333333334,
+    "reject_t2": 45,
+    "reject_t1": 138,
+    "pass_t1t2t3": 167,
+    "pass_route_diversity": 167,
+    "pass_critics": 167,
+    "reject_commit_dup": 2,
+    "final_accepted": 165,
+    "final_route_entropy": 2.256389711489061,
+    "accept_rate": 0.4714285714285714,
+    "num_generated": 400,
+    "repetition_accepted": 0.43204293804412136
+   },
+   {
+    "round_id": 2,
+    "num_candidates": 355,
+    "num_accepted": 159,
+    "input_candidates": 355,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 28,
+    "cf_caught": 10,
+    "cf_catch_rate": 0.35714285714285715,
+    "reject_t1": 141,
+    "reject_t2": 48,
+    "pass_t1t2t3": 166,
+    "pass_route_diversity": 166,
+    "pass_critics": 166,
+    "reject_commit_dup": 7,
+    "final_accepted": 159,
+    "final_route_entropy": 2.220062076151387,
+    "accept_rate": 0.447887323943662,
+    "num_generated": 400,
+    "repetition_accepted": 0.42795001919058384
+   },
+   {
+    "round_id": 3,
+    "num_candidates": 358,
+    "num_accepted": 166,
+    "input_candidates": 358,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 61,
+    "cf_caught": 35,
+    "cf_catch_rate": 0.5737704918032787,
+    "reject_t2": 46,
+    "reject_t1": 138,
+    "pass_t1t2t3": 174,
+    "pass_route_diversity": 174,
+    "pass_critics": 174,
+    "reject_commit_dup": 8,
+    "final_accepted": 166,
+    "final_route_entropy": 2.284617771277563,
+    "accept_rate": 0.46368715083798884,
+    "num_generated": 396,
+    "repetition_accepted": 0.42849869534780116
+   },
+   {
+    "round_id": 4,
+    "num_candidates": 356,
+    "num_accepted": 168,
+    "input_candidates": 356,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 45,
+    "cf_caught": 24,
+    "cf_catch_rate": 0.5333333333333333,
+    "reject_t1": 144,
+    "reject_t2": 42,
+    "pass_t1t2t3": 170,
+    "pass_route_diversity": 170,
+    "pass_critics": 170,
+    "reject_commit_dup": 2,
+    "final_accepted": 168,
+    "final_route_entropy": 2.260324079046945,
+    "accept_rate": 0.47191011235955055,
+    "num_generated": 398,
+    "repetition_accepted": 0.43383997825677906
+   },
+   {
+    "round_id": 5,
+    "num_candidates": 355,
+    "num_accepted": 170,
+    "input_candidates": 355,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 51,
+    "cf_caught": 25,
+    "cf_catch_rate": 0.49019607843137253,
+    "reject_t2": 44,
+    "reject_t1": 139,
+    "pass_t1t2t3": 172,
+    "pass_route_diversity": 172,
+    "pass_critics": 172,
+    "reject_commit_dup": 2,
+    "final_accepted": 170,
+    "final_route_entropy": 2.259282485496933,
+    "accept_rate": 0.4788732394366197,
+    "num_generated": 398,
+    "repetition_accepted": 0.433663929761808
+   },
+   {
+    "round_id": 6,
+    "num_candidates": 352,
+    "num_accepted": 177,
+    "input_candidates": 352,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 43,
+    "cf_caught": 23,
+    "cf_catch_rate": 0.5348837209302325,
+    "reject_t1": 135,
+    "reject_t2": 30,
+    "pass_t1t2t3": 187,
+    "pass_route_diversity": 187,
+    "pass_critics": 187,
+    "reject_commit_dup": 10,
+    "final_accepted": 177,
+    "final_route_entropy": 2.26940393628007,
+    "accept_rate": 0.5028409090909091,
+    "num_generated": 397,
+    "repetition_accepted": 0.4574851268768465
+   },
+   {
+    "round_id": 7,
+    "num_candidates": 358,
+    "num_accepted": 173,
+    "input_candidates": 358,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 56,
+    "cf_caught": 23,
+    "cf_catch_rate": 0.4107142857142857,
+    "reject_t1": 138,
+    "reject_t2": 40,
+    "pass_t1t2t3": 180,
+    "pass_route_diversity": 180,
+    "pass_critics": 180,
+    "reject_commit_dup": 7,
+    "final_accepted": 173,
+    "final_route_entropy": 2.246971115215771,
+    "accept_rate": 0.48324022346368717,
+    "num_generated": 399,
+    "repetition_accepted": 0.4273962511254809
+   },
+   {
+    "round_id": 8,
+    "num_candidates": 357,
+    "num_accepted": 168,
+    "input_candidates": 357,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 34,
+    "cf_caught": 17,
+    "cf_catch_rate": 0.5,
+    "reject_t2": 43,
+    "reject_t1": 139,
+    "pass_t1t2t3": 175,
+    "pass_route_diversity": 175,
+    "pass_critics": 175,
+    "reject_commit_dup": 7,
+    "final_accepted": 168,
+    "final_route_entropy": 2.2192050409185984,
+    "accept_rate": 0.47058823529411764,
+    "num_generated": 396,
+    "repetition_accepted": 0.4313339339213509
+   }
+  ],
+  "teacher": {
+   "teacher_primary": 769,
+   "teacher_mistral": 577
+  },
+  "teacher_route": {
+   "teacher_primary|contrast": 230,
+   "teacher_mistral|direct": 83,
+   "teacher_primary|expand": 170,
+   "teacher_mistral|paraphrase": 120,
+   "teacher_primary|socratic": 113,
+   "teacher_primary|direct": 128,
+   "teacher_primary|paraphrase": 128,
+   "teacher_mistral|contrast": 185,
+   "teacher_mistral|expand": 118,
+   "teacher_mistral|socratic": 71
+  },
+  "per_round_teacher": [
+   {
+    "teacher_primary": 92,
+    "teacher_mistral": 73
+   },
+   {
+    "teacher_mistral": 64,
+    "teacher_primary": 95
+   },
+   {
+    "teacher_mistral": 72,
+    "teacher_primary": 94
+   },
+   {
+    "teacher_primary": 96,
+    "teacher_mistral": 72
+   },
+   {
+    "teacher_mistral": 71,
+    "teacher_primary": 99
+   },
+   {
+    "teacher_primary": 99,
+    "teacher_mistral": 78
+   },
+   {
+    "teacher_primary": 98,
+    "teacher_mistral": 75
+   },
+   {
+    "teacher_primary": 96,
+    "teacher_mistral": 72
+   }
+  ],
+  "n_acc": 1346
+ },
+ "Qwen2.5-7B": {
+  "ml": {
+   "generated": {
+    "heaps": [
+     0.8066273584204021,
+     0.8134225613390151,
+     0.8079728742954291,
+     0.8087999611200727,
+     0.8078578213875126,
+     0.8025942491519609,
+     0.8110574013509922,
+     0.8090471004827927
+    ],
+    "tail_mass": [
+     0.9896825045388123,
+     0.9680433143101566,
+     0.9512578616352201,
+     0.9888055499245445,
+     1.0822952828262202,
+     1.1890805560207671,
+     1.0935300411059181,
+     0.9311199716665334
+    ],
+    "repetition": [
+     0.47977992051455204,
+     0.4734573043067156,
+     0.4830018306584755,
+     0.47530773822260763,
+     0.47604515287310684,
+     0.49375865303023536,
+     0.4622834876230376,
+     0.4761105017822868
+    ],
+    "entropy_mean": [
+     3.445462852716446,
+     3.362508372068405,
+     3.151814064979553,
+     3.284319659471512,
+     3.10345619559288,
+     3.231441547870636,
+     3.2553527438640595,
+     3.1623551905155183
+    ],
+    "entropy_std": [
+     0.7107053961772384,
+     0.8136339164352173,
+     0.6892387363123864,
+     0.6650550403269945,
+     0.7256170744750452,
+     0.8565155501796891,
+     0.7002019901676652,
+     0.6490666711443828
+    ]
+   },
+   "accepted": {
+    "heaps": [
+     0.8304471291297943,
+     0.8175859572619529,
+     0.8076530936830386,
+     0.8002756652352438,
+     0.7943888118594846,
+     0.7892363947379816,
+     0.7858539307059282,
+     0.783194831993574
+    ],
+    "tail_mass": [
+     1.188211811670776,
+     1.1837975434347427,
+     1.188583541524718,
+     1.107973580932325,
+     1.2314396002557606,
+     1.3318670576735092,
+     1.237045256025874,
+     1.1536865403236962
+    ],
+    "repetition": [
+     0.3917198947961676,
+     0.3841382037467253,
+     0.38580729823853027,
+     0.38212841314284346,
+     0.39108606072088287,
+     0.40936973044307046,
+     0.37497048963596014,
+     0.3684982293050022
+    ],
+    "entropy_mean": [
+     3.2750589752197268,
+     3.15258709192276,
+     3.1448622155189514,
+     3.2201291847229006,
+     3.0866201090812684,
+     3.2162935876846315,
+     3.1938525581359865,
+     3.169382247924805
+    ],
+    "entropy_std": [
+     0.2710678186917834,
+     0.33558882493047154,
+     0.2887482600998331,
+     0.2947183929652822,
+     0.3127950002539491,
+     0.3171391193965713,
+     0.3220734940557986,
+     0.29424356338636337
+    ]
+   }
+  },
+  "diag": [
+   {
+    "round_id": 1,
+    "num_candidates": 350,
+    "num_accepted": 173,
+    "input_candidates": 350,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 48,
+    "cf_caught": 23,
+    "cf_catch_rate": 0.4791666666666667,
+    "reject_t1": 142,
+    "reject_t2": 28,
+    "pass_t1t2t3": 180,
+    "pass_route_diversity": 180,
+    "pass_critics": 180,
+    "reject_commit_dup": 7,
+    "final_accepted": 173,
+    "final_route_entropy": 2.2570276331016106,
+    "accept_rate": 0.4942857142857143,
+    "num_generated": 400,
+    "repetition_accepted": 0.3917198947961676
+   },
+   {
+    "round_id": 2,
+    "num_candidates": 355,
+    "num_accepted": 161,
+    "input_candidates": 355,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 28,
+    "cf_caught": 10,
+    "cf_catch_rate": 0.35714285714285715,
+    "reject_t1": 142,
+    "reject_t2": 46,
+    "pass_t1t2t3": 167,
+    "pass_route_diversity": 167,
+    "pass_critics": 167,
+    "reject_commit_dup": 6,
+    "final_accepted": 161,
+    "final_route_entropy": 2.250894564714975,
+    "accept_rate": 0.4535211267605634,
+    "num_generated": 400,
+    "repetition_accepted": 0.3841382037467253
+   },
+   {
+    "round_id": 3,
+    "num_candidates": 358,
+    "num_accepted": 163,
+    "input_candidates": 358,
+    "active_critics": "lexical_diversity,style,template",
+    "cf_probes": 61,
+    "cf_caught": 33,
+    "cf_catch_rate": 0.5409836065573771,
+    "reject_t2": 45,
+    "reject_t1": 143,
+    "pass_t1t2t3": 170,
+    "pass_route_diversity": 170,
+    "pass_critics": 170,
+    "reject_commit_dup": 7,
+    "final_accepted": 163,
+    "final_route_entropy": 2.280501171475204,
+    "accept_rate": 0.4553072625698324,
+    "num_generated": 396,
+    "repetition_accepted": 0.38580729823853027
+   },
+   {
+    "round_id": 4,
+    "num_candidates": 356,
+    "num_accepted": 171,
+    "input_candidates": 356,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 45,
+    "cf_caught": 22,
+    "cf_catch_rate": 0.4888888888888889,
+    "reject_t1": 141,
+    "reject_t2": 42,
+    "pass_t1t2t3": 173,
+    "pass_route_diversity": 173,
+    "pass_critics": 173,
+    "reject_commit_dup": 2,
+    "final_accepted": 171,
+    "final_route_entropy": 2.279043087656851,
+    "accept_rate": 0.4803370786516854,
+    "num_generated": 398,
+    "repetition_accepted": 0.38212841314284346
+   },
+   {
+    "round_id": 5,
+    "num_candidates": 355,
+    "num_accepted": 171,
+    "input_candidates": 355,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 51,
+    "cf_caught": 24,
+    "cf_catch_rate": 0.47058823529411764,
+    "reject_t1": 139,
+    "reject_t2": 40,
+    "pass_t1t2t3": 176,
+    "pass_route_diversity": 176,
+    "pass_critics": 176,
+    "reject_commit_dup": 5,
+    "final_accepted": 171,
+    "final_route_entropy": 2.269320154355154,
+    "accept_rate": 0.48169014084507045,
+    "num_generated": 398,
+    "repetition_accepted": 0.39108606072088287
+   },
+   {
+    "round_id": 6,
+    "num_candidates": 352,
+    "num_accepted": 167,
+    "input_candidates": 352,
+    "active_critics": "style,entropy_shape,template",
+    "cf_probes": 43,
+    "cf_caught": 25,
+    "cf_catch_rate": 0.5813953488372093,
+    "reject_t1": 142,
+    "reject_t2": 35,
+    "pass_t1t2t3": 175,
+    "pass_route_diversity": 175,
+    "pass_critics": 175,
+    "reject_commit_dup": 8,
+    "final_accepted": 167,
+    "final_route_entropy": 2.2812679963701115,
+    "accept_rate": 0.4744318181818182,
+    "num_generated": 397,
+    "repetition_accepted": 0.40936973044307046
+   },
+   {
+    "round_id": 7,
+    "num_candidates": 358,
+    "num_accepted": 175,
+    "input_candidates": 358,
+    "active_critics": "template,style,entropy_shape,lexical_diversity",
+    "cf_probes": 56,
+    "cf_caught": 26,
+    "cf_catch_rate": 0.4642857142857143,
+    "reject_t1": 138,
+    "reject_t2": 41,
+    "pass_t1t2t3": 179,
+    "pass_route_diversity": 179,
+    "pass_critics": 179,
+    "reject_commit_dup": 4,
+    "final_accepted": 175,
+    "final_route_entropy": 2.2829080187992137,
+    "accept_rate": 0.4888268156424581,
+    "num_generated": 399,
+    "repetition_accepted": 0.37497048963596014
+   },
+   {
+    "round_id": 8,
+    "num_candidates": 357,
+    "num_accepted": 155,
+    "input_candidates": 357,
+    "active_critics": "template,lexical_diversity,entropy_shape",
+    "cf_probes": 34,
+    "cf_caught": 19,
+    "cf_catch_rate": 0.5588235294117647,
+    "reject_t2": 53,
+    "reject_t1": 144,
+    "pass_t1t2t3": 160,
+    "pass_route_diversity": 160,
+    "pass_critics": 160,
+    "reject_commit_dup": 5,
+    "final_accepted": 155,
+    "final_route_entropy": 2.30190253082419,
+    "accept_rate": 0.4341736694677871,
+    "num_generated": 396,
+    "repetition_accepted": 0.3684982293050022
+   }
+  ],
+  "teacher": {
+   "teacher_mistral": 637,
+   "teacher_primary": 699
+  },
+  "teacher_route": {
+   "teacher_mistral|contrast": 192,
+   "teacher_mistral|direct": 111,
+   "teacher_primary|expand": 151,
+   "teacher_primary|paraphrase": 123,
+   "teacher_primary|socratic": 119,
+   "teacher_primary|direct": 131,
+   "teacher_mistral|expand": 164,
+   "teacher_mistral|paraphrase": 87,
+   "teacher_mistral|socratic": 83,
+   "teacher_primary|contrast": 175
+  },
+  "per_round_teacher": [
+   {
+    "teacher_mistral": 87,
+    "teacher_primary": 86
+   },
+   {
+    "teacher_primary": 81,
+    "teacher_mistral": 80
+   },
+   {
+    "teacher_primary": 88,
+    "teacher_mistral": 75
+   },
+   {
+    "teacher_primary": 91,
+    "teacher_mistral": 80
+   },
+   {
+    "teacher_primary": 94,
+    "teacher_mistral": 77
+   },
+   {
+    "teacher_mistral": 81,
+    "teacher_primary": 86
+   },
+   {
+    "teacher_primary": 92,
+    "teacher_mistral": 83
+   },
+   {
+    "teacher_primary": 81,
+    "teacher_mistral": 74
+   }
+  ],
+  "n_acc": 1336
+ }
+}

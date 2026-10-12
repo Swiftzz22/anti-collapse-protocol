@@ -1,0 +1,28 @@
+{
+  "round": 1,
+  "condition": "naive",
+  "num_generated": 2000,
+  "num_with_answer": 2000,
+  "generated_label_precision": 0.5285,
+  "num_after_correctness": 2000,
+  "accept_rate": 1.0,
+  "final_route_entropy": 2.321928094887362,
+  "num_accepted": 2000,
+  "accepted_label_precision": 0.5285,
+  "accepted_route_dist": {
+    "direct": 400,
+    "paraphrase": 400,
+    "expand": 400,
+    "contrast": 400,
+    "socratic": 400
+  },
+  "pool_size": 2000,
+  "train_steps": 64,
+  "train_loss_mean": 0.22056655725464225,
+  "train_loss_last": 0.1589783877134323,
+  "train_seconds": 58.935449838638306,
+  "micro_bs": 8,
+  "grad_accum": 2,
+  "grad_ckpt": false,
+  "phase_seconds": 62.19825053215027
+}
